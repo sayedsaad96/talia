@@ -1,0 +1,73 @@
+name: talia
+description: "Offline-First Quran memorization application."
+publish_to: 'none'
+version: 2.0.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # UI
+  cupertino_icons: ^1.0.8
+
+  # State Management
+  flutter_bloc: ^8.1.0
+  equatable: ^2.0.0
+
+  # Dependency Injection
+  get_it: ^8.0.0
+
+  # Routing
+  go_router: ^15.0.0
+
+  # Local Database
+  isar: ^3.1.0+1
+  isar_flutter_libs: ^3.1.0+1
+
+  # Cloud Backend
+  supabase_flutter: ^2.0.0
+
+  # Functional Programming
+  dartz: ^0.10.1
+
+  # Network
+  connectivity_plus: ^6.0.0
+
+  # Configuration
+  flutter_dotenv: ^5.2.0
+
+  # Localization
+  intl: any
+
+  # Logging
+  logger: ^2.5.0
+
+  # Quran
+  qcf_quran_plus: ^0.0.8
+  scrollable_positioned_list: ^0.3.8
+  shared_preferences: ^2.2.0
+
+  # Audio
+  just_audio: ^0.9.0
+  audio_session: ^0.1.21
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  bloc_test: ^9.1.4
+  mocktail: ^0.3.0
+  build_runner: ^2.4.0
+  # isar_generator added in Phase 3 when Isar schemas are needed
+
+flutter:
+  generate: true
+  uses-material-design: true
+
+  assets:
+    - .env
